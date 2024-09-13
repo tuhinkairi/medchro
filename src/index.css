@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  html{
+    @apply scroll-smooth;
+  }
+  body{
+    @apply bg-gray-100 w-screen overflow-x-hidden capitalize text-sm font-headingFont text-center ;
+  }
+  h1{
+    @apply text-5xl text-center font-bold ;
+  }
+  button{
+    @apply border-zinc-700;
+  }
+  h1,h2,h3,h4,h5,h6,p,div,span{
+    @apply transition-all duration-200; 
+  }
+}
+@layer utilities {
+  @keyframes spinning {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes text-spinning {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .animate-spinning {
+    animation: spinning 35s linear infinite;
+  }
+  .animate-text-spinning {
+    animation: text-spinning 35s linear infinite;
+  }
+}

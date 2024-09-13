@@ -1,0 +1,1 @@
+this folder is user for templating where you create the functions which directly imported in the features folders inside <name>Splice functions to control all from the Redux 
