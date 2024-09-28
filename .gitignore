@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*gitignore
+*.env
+*/.env
+.vscode
+/backend/test/
+/frontend/src/assets/
+/frontend/README.md
